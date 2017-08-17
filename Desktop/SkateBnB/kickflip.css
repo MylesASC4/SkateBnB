@@ -1,0 +1,33 @@
+body {
+    margin: 0 auto;
+  min-height: 75rem; /* Can be removed; just added for demo purposes */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  
+}
+
+.navbar {
+  color: rebeccapurple;
+  margin-bottom: 0;
+  background-image: url("./pictures/skate.png");
+  background-repeat: no-repeat;
+  background-size: 75px ;
+  background-position: 25px;
+}
+
+.img69{
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #34495E;
+    margin: 25 auto;
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-top: 0px;
+    padding-top: 30px;
+}
+.pic{
+    padding-top: 0px;
+    padding-bottom: 50px;
+}
