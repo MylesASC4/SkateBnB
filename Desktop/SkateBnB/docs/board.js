@@ -1,5 +1,7 @@
 var database = firebase.database().ref();
-
+function setup(){
+        $("h1").text("Welcome");
+}
 //called when successful user log in
 function onSignIn(googleUser) {
     console.log('User signed in!');
@@ -35,7 +37,7 @@ function updateDB() {
         PSW: psw
     }
     database.push(value)
-    window.location.href = 'http://localhost:5500/Album%20example%20for%20Bootstrap.html';
+    window.location.href = 'index.html';
 }
 database.on("child_added", function (rowData) {
     var row = rowData.val();

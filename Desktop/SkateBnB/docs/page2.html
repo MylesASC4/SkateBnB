@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="google-signin-client_id" content="671074625623-e79l93beb6mlt4o6hhf1e5q82kf290o1.apps.googleusercontent.com">
+    <title>SkateBnB</title>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCxzkrQQvtpPc1o0a3ypBdf6F-xKWuI14M",
+            authDomain: "goskate-a093d.firebaseapp.com",
+            databaseURL: "https://goskate-a093d.firebaseio.com",
+            projectId: "goskate-a093d",
+            storageBucket: "",
+            messagingSenderId: "86454872976"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!--Reference Client ID in meta tag here-->
+
+    <script src="board.js"></script>
+    <!-- <link rel "stylesheet" href="kickflip.css"> -->
+    <link href="kickflip.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link href="./Album example for Bootstrap_files/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+
+<body cz-shortcut-listen="true" style="background-image: url(http://wallpapercave.com/wp/xO2qTSS.jpg); text-align: center; background-size: cover;">
+    <div class="collapse" id="navbarHeader">
+
+    </div>
+    <div class="navbar navbar-dark bg-dark">
+        <div class="container d-flex justify-content-between">
+            <a href="index.html" class="navbar-brand">SkateBnB</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader"
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+    </div>
+
+
+    <!-- <img style="display: inline-block;" src="skate.png" alt="logo" /> -->
+    <div class="mainContainer">
+        <!--Text greeting user-->
+        <header>
+            <h2 style="display: inline-block;">Log-In</h2>
+        </header>
+
+        <!--Populate section with user data-->
+        <section>
+            <!-- picture-->
+            <div class="userImg">
+                <img src="">
+            </div>
+
+
+        </section>
+    </div>
+    <!-- <form action="/action_page.php">
+        <div class="imgcontainer">
+            <img src="http://cdn.wallpapersafari.com/79/80/x4sAEC.jpg" alt="Avatar" class="avatar">
+        </div> -->
+
+    <div class="img69" style="text-align:center;">
+        <div class="pic">
+            <img src="./pictures/skate.png">
+        </div>
+        <label><b style="color:white;">Username</b></label>
+        <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
+
+        <p><label><b style="color:white;">Password</b></label>
+            <input id="psw" type="password" placeholder="Enter Password" name="psw" required></p>
+
+        <button style="margin-left:70px; " type="submit" onclick="updateDB()">Login</button>
+        <input type="checkbox" checked="checked"><b style="color:white;"> Remember me</b>
+        <p style="margin-left:11.5px;"> <a href="#" style="color:white;">Forgot Password ?</a></p>
+    </div>
+
+
+
+    </div>
+    </form>
+
+
+</body>
+
+</html>
